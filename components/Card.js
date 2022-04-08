@@ -21,6 +21,14 @@ Notes:
 
 export default function Card() {
     return (
-        <h1>Replace this</h1>
+        <div className="card">
+          <img src="https://raw.githubusercontent.com/szaszfaijulia/react-airbnb/master/src/Katie-Zaferes.jpeg" className="card--image"/>
+          <div className="card--stats">
+            <img src="" />
+            <span>5.0</span>
+            <span>(6) • </span>
+            <span>USA</span>
+          </div>
+        </div>
     )
 }
