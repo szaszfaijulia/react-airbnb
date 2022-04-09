@@ -10,17 +10,21 @@ export default function App() {
     return (
       <Card 
         key={item.id}
-        item={item}
+        {...item}
       />
     )
   })
-          // <Hero />
   return (
     <div>
       <Navbar />
+      <Hero />
       <section className="cards-list">
         {cards}
       </section>
     </div>
   )
 }
+
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals
+//item={item}  HELYETT  {...items}
